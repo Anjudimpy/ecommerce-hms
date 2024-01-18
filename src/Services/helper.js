@@ -1,7 +1,7 @@
 import axios from "axios";
 import { getToken } from "../auth";
 
-export const BASE_URL = 'ehms-server-production.up.railway.app/api/v1';
+export const BASE_URL = 'ehms-server-production.up.railway.app';
 
 export const myAxios = axios.create({
   baseURL: BASE_URL
