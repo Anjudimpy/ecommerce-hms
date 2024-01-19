@@ -31,6 +31,11 @@ import Dnc from '../hostelmanagementsys/CategoryList/Dnc';
 import Th from '../hostelmanagementsys/HostelList/Th';
 import Sh from '../hostelmanagementsys/HostelList/Sh';
 import Ch from '../hostelmanagementsys/HostelList/Ch';
+import ChennaiTable from '../hostelmanagementsys/HostelDetails/ChennaiData';
+import BcChennai from '../hostelmanagementsys/HostelDetails/BcChennai';
+import MbcChennai from '../hostelmanagementsys/HostelDetails/MbcChennai';
+import MinChennai from '../hostelmanagementsys/HostelDetails/MinChennai';
+
 
 
 
@@ -68,6 +73,11 @@ const Main = () => {
       <Route path='/hostel' element={<Hostel/>}/>
       <Route path='/sign' element={<Sign/>}/>
       <Route path='/categories/:categoryId' element={<Categories/>}/>
+
+      <Route path='/chennai' element={<ChennaiTable/>}/>
+      <Route path='/chennaibc' element={<BcChennai/>}/>
+      <Route path='/chennaimbc' element={<MbcChennai/>}/>
+      <Route path='/chennaimin' element={<MinChennai/>}/>
     
      
       
