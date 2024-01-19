@@ -15,8 +15,8 @@ const Sh = () => {
  <th colSpan={3}> No. of MBC & DNC Hostels </th> <th colSpan={3}>No. of Minorities Hostels </th> <th colSpan={3}>Grand Total</th>
     </tr>
     <tr>
-      <th>College</th><th>School</th><th>Total</th> <th>College</th><th>School</th><th>Total</th>
-      <th>College</th><th>School</th><th>Total</th> <th>College</th><th>School</th><th>Total</th>
+      <th>Girls</th><th>Boys</th><th>Total</th> <th>Girls</th><th>Boys</th><th>Total</th>
+      <th>Girls</th><th>Boys</th><th>Total</th> <th>Girls</th><th>Boys</th><th>Total</th>
     </tr>
   </thead>
   <tbody >
