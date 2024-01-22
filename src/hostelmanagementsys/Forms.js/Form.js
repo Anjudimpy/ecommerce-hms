@@ -15,7 +15,6 @@ import { loadAllCategories } from '../../Services/Category-Caste';
 import { getCurrentUserDetail } from '../../auth';
 
 const Forms = () => {
-  window.scroll(0,0);
     const [currentStep, setCurrentStep] =useState(1);
     const [finalData, setFinalData] = useState([]);
     const [isSubmitted, setIsSubmitted] = useState(false);

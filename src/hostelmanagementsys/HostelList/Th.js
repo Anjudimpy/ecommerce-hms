@@ -6,7 +6,7 @@ const Th = () => {
   window.scroll(0,0);
   return (
    <Base>
-     <h4 className='p-4 text-yellow-500 text-center'>Details of District wise Total Hostels</h4>
+     <h4 className='p-4 text-yellow-500 text-center uppercase'>Details of District wise Total Hostels</h4>
     <div className='ml-32 mr-32'>
     <Table bordered>
   <thead className='text-center'>

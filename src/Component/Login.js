@@ -56,7 +56,6 @@ const handleReset =()=>{
        window.location.reload();
     })
 
-
    }).catch(error=>{
     console.log(error);
     if(error.response.status==401 || error.response.status==404)
@@ -89,7 +88,7 @@ const handleReset =()=>{
             id='email'
             value={loginDetail.username}
             onChange={(e)=>handleChange(e,'username')}
-            
+
             />
               {/* email */}
               <Label for="email">Enter Password  <span className='text-red-500'>*</span></Label>

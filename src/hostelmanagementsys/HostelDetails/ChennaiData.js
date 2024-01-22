@@ -7,14 +7,14 @@ import { Link } from 'react-router-dom';
 const ChennaiTable = () => {
   return (
    <Base>
-   <div className='p-5 text-center'>
+   <div className='p-4 text-center'>
+    <h4>CHENNAI DISTRICT</h4>
   <Link to={'/chennaibc'}><Button color="danger" className='m-2'> Backward Classes Hostels </Button></Link>
 
   <Link to={'/chennaimbc'}><Button color="success" className='m-2'>   Backward Classes  & Denotified Communities Hostels  </Button></Link>
 
   <Link to={'/chennaimin'}><Button color="warning" className='m-2'> Minorities</Button></Link>
-
- 
+  
 </div>
    </Base>
   );

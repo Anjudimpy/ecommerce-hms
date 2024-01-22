@@ -32,8 +32,7 @@ const CustamNav = (args) => {
     setLogin(isLoginedIn());
     setUser(getCurrentUserDetail());
     },[])
-
-
+    
   const logout=()=>{
     doLogout(()=>{
       //logged out
