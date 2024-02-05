@@ -45,18 +45,18 @@ const handleReset =()=>{
 
    //submit the data to server to generate token
    loginUser(loginDetail).then((data)=>{
-    console.log(data)
+  //  console.log(data)
 
     //save the data to localstorage
     doLogin(data,()=>{
-      console.log("login detail save to local storage");
+    //  console.log("login detail save to local storage");
 
       //redirect to user page after login
       navigate("/user/form")
        window.location.reload();
     })
 
-   }).catch(error=>{
+  }).catch(error=>{
     console.log(error);
     if(error.response.status==401 || error.response.status==404)
     {

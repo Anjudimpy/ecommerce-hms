@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Base from './Base'
 import { Link, useParams } from 'react-router-dom'
-import { Card, CardBody, CardText, Col, Container, Row } from 'reactstrap'
+import { Button, Card, CardBody, CardText, Col, Container, Row, Form,FormGroup, Input, Label } from 'reactstrap'
 import { loadPost } from '../Services/post-service'
 import { toast } from 'react-toastify'
 import { BASE_URL } from '../Services/helper'
@@ -18,6 +18,12 @@ const Single = () => {
 
   const {postId}=useParams()
   const [post,setPost]=useState(null)
+
+  const [isExpanded, setIsExpanded]=useState( false);
+
+  const toggleDetails=()=>{
+    setIsExpanded(!isExpanded);
+  }
 
   useEffect(()=>{
 
@@ -85,6 +91,94 @@ const Single = () => {
     </Card>
     </Col>
   </Row>
+  <div className='mt-4 mr-5 mb-4 flex justify-end w-full'>
+<div className='pr-2'>   <Button color="success" onClick={toggleDetails}>CONFIRM</Button></div>
+ <div> <Button color='danger'>REJECT</Button></div>
+  </div>
+  {isExpanded && (
+       <div>
+        <h4 className='pt-2 pb-5 text-center text-amber-500 uppercase underline'>hostel confirmation details</h4>
+        <Form>
+        <FormGroup>
+        <Label for="name">Message</Label>
+        <Input
+          id="name"
+          name="name"
+          placeholder="Typing....."
+          type="text"
+        />
+      </FormGroup>
+  <Row>
+    <Col md={6}>
+    <FormGroup>
+        <Label for="name">Name </Label>
+        <Input
+          id="name"
+          name="name"
+          placeholder={post.user.name}
+          type="text"
+        />
+      </FormGroup>
+    </Col>
+    <Col md={6}>
+    <FormGroup>
+        <Label for="exampleEmail">Email </Label>
+        <Input
+          id="exampleEmail"
+          name="email"
+          placeholder={post.user.email}
+          type="email"
+        />
+      </FormGroup>
+    </Col>
+  </Row>
+  <FormGroup>
+    <Label> Allocated Hostel Name </Label>
+    <Input
+      id="hostelName"
+      name="hostelName"
+    />
+  </FormGroup>
+  <FormGroup>
+    <Label for="exampleAddress2">  Hostel Location  </Label>
+    <Input
+      id="location"
+      name="location"   
+    />
+  </FormGroup>
+  <Row>
+    <Col md={6}>
+      <FormGroup>
+        <Label for="exampleCity">  City   </Label>
+        <Input
+          id="exampleCity"
+          name="city"
+        />
+      </FormGroup>
+    </Col>
+    <Col md={4}>
+      <FormGroup>
+        <Label for="exampleState">    State     </Label>
+        <Input
+          id="exampleState"
+          name="state"
+        />
+      </FormGroup>
+    </Col>
+    <Col md={2}>
+      <FormGroup>
+        <Label for="exampleZip">   Zip      </Label>
+        <Input
+          id="exampleZip"
+          name="zip"
+        />
+      </FormGroup>
+    </Col>
+  </Row>
+ <div className='text-center m-4'> <Button color='warning'>  SEND  </Button></div>
+</Form>
+       </div>
+      )}
  </Container>
   </Base>
   )
@@ -96,7 +190,6 @@ const DisplayFile = ({ fileUrl }) => {
 
   // Ensure workerSrc is set
   
-
   return (
     <div>
    <Document file={fileUrl}>

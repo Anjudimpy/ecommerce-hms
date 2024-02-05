@@ -31,10 +31,17 @@ import Dnc from '../hostelmanagementsys/CategoryList/Dnc';
 import Th from '../hostelmanagementsys/HostelList/Th';
 import Sh from '../hostelmanagementsys/HostelList/Sh';
 import Ch from '../hostelmanagementsys/HostelList/Ch';
-import ChennaiTable from '../hostelmanagementsys/HostelDetails/ChennaiData';
-import BcChennai from '../hostelmanagementsys/HostelDetails/BcChennai';
-import MbcChennai from '../hostelmanagementsys/HostelDetails/MbcChennai';
-import MinChennai from '../hostelmanagementsys/HostelDetails/MinChennai';
+
+import BcChennai from '../hostelmanagementsys/HostelDetails/Chennai/BcChennai';
+import MbcChennai from '../hostelmanagementsys/HostelDetails/Chennai/MbcChennai';
+import MinChennai from '../hostelmanagementsys/HostelDetails/Chennai/MinChennai';
+import DncChennai from '../hostelmanagementsys/HostelDetails/Chennai/DncChennai';
+import ChennaiTable from '../hostelmanagementsys/HostelDetails/Chennai/ChennaiData';
+import KancheepuramTable from '../hostelmanagementsys/HostelDetails/Kancheepuram/KancheepuramTable';
+import BcKancheepuram from '../hostelmanagementsys/HostelDetails/Kancheepuram/bcKancheepuram';
+import MbcKancheepuram from '../hostelmanagementsys/HostelDetails/Kancheepuram/MbcKancheepuram';
+import MinKancheepuram from '../hostelmanagementsys/HostelDetails/Kancheepuram/MinKancheepuram';
+import DncKancheepuram from '../hostelmanagementsys/HostelDetails/Kancheepuram/DncKancheepuram';
 
 
 
@@ -74,10 +81,19 @@ const Main = () => {
       <Route path='/sign' element={<Sign/>}/>
       <Route path='/categories/:categoryId' element={<Categories/>}/>
 
+    
+
       <Route path='/chennai' element={<ChennaiTable/>}/>
       <Route path='/chennaibc' element={<BcChennai/>}/>
       <Route path='/chennaimbc' element={<MbcChennai/>}/>
       <Route path='/chennaimin' element={<MinChennai/>}/>
+      <Route path='/chennaidnc' element={<DncChennai/>}/>
+
+      <Route path='/kancheepuram' element={<KancheepuramTable/>}/>
+      <Route path='/kancheepurambc' element={<BcKancheepuram/>}/>
+      <Route path='/kancheepurammbc' element={<MbcKancheepuram/>}/>
+      <Route path='/kancheepurammin' element={<MinKancheepuram/>}/>
+      <Route path='/kancheepuramdnc' element={<DncKancheepuram/>}/>
     
      
       

@@ -127,11 +127,10 @@ let newStep= currentStep;
        <div>
   <Button type='submit'
    onClick={handleFormSubmit}
-   >{ currentStep === steps.length-2?"Submit":""}</Button>
+   >{ currentStep === steps.length-1?"Submit":""}</Button>
 </div>
-       </Form>
-      
-    </StepperContext.Provider>
+   </Form>  
+   </StepperContext.Provider>
 </div>
 </div>
 

@@ -14,7 +14,7 @@ const Sh = () => {
   <thead className='text-center'>
     <tr>
  <th rowSpan={2}>SI. NO.</th> <th rowSpan={2}>Name of District</th> <th colSpan={3}>No. of BC Hostels</th>
- <th colSpan={3}> No. of MBC Hostels </th> <th colSpan={3}>No. of & DNC Hostels</th> <th colSpan={3}>No. of Minorities Hostels </th> <th rowSpan={2}> Total</th><th rowSpan={2}>Hostel Details</th>
+ <th colSpan={3}> No. of MBC Hostels </th> <th colSpan={3}>No. of DNC Hostels</th> <th colSpan={3}>No. of Minorities Hostels </th> <th rowSpan={2}> Total</th><th rowSpan={2}>Hostel Details</th>
     </tr>
     <tr>
     <th>Girls</th><th>Boys</th><th>Total</th> <th>Girls</th><th>Boys</th><th>Total</th>
@@ -22,8 +22,8 @@ const Sh = () => {
     </tr>
   </thead>
   <tbody >
-    <tr>  <td>1</td><td>Chennai</td><td>3</td><td>8</td><td>11</td><td>2</td><td>3</td><td>5</td><td>0</td><td>0</td><td>0</td>
-      <td>1</td><td>0</td><td>1</td>  <td>17</td> <td className='text-center'> <Link to={'/chennai'}> <Badge color="warning" className='cursor-pointer'>Click Here </Badge></Link></td>  </tr>  
+    <tr>  <td>1</td><td>Chennai</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+      <td>0</td><td>0</td><td>0</td>  <td>0</td> <td className='text-center'> <Link to={''}> <Badge color="warning" className='cursor-pointer'>Click Here </Badge></Link></td>  </tr>  
 
   <tr>  <td>2</td><td>Kancheepuram</td><td>3</td><td>4</td><td>7</td><td>2</td><td>8</td><td>10</td><td>0</td><td>0</td><td>0</td>
   <td>5</td><td>12</td><td>17</td>    </tr>   

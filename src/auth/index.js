@@ -9,14 +9,6 @@ export const isLoginedIn =()=>{
     }
 };
 
-// export const isAdminLoginedIn =()=>{
-//     let data =localStorage.getItem("data");
-//     if (data == null){
-//         return false;
-//     }else{
-//         return true;
-//     }
-// };
 
 
 //dologin=>set to localstorage
